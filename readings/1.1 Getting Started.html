@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.composingprograms.com/pages/11-getting-started.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>1.1 Getting Started</title>
+  
+
+  <link rel="stylesheet" type="text/css" href="./1.1 Getting Started_files/cp.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="./1.1 Getting Started_files/pytutor.css">
+  <link rel="stylesheet" type="text/css" href="./1.1 Getting Started_files/jquery-ui-1.8.21.custom.css">
+  <link rel="stylesheet" type="text/css" href="./1.1 Getting Started_files/codemirror.css">
+  <link rel="stylesheet" type="text/css" href="./1.1 Getting Started_files/coding.css">
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="./1.1 Getting Started_files/jquery-1.8.2.min.js.download"></script>
+  <script type="text/javascript" src="./1.1 Getting Started_files/jquery-ui-1.8.24.custom.min.js.download"></script>
+  <script type="text/javascript" src="./1.1 Getting Started_files/jquery.ba-bbq.min.js.download"></script>
+  <script type="text/javascript" src="./1.1 Getting Started_files/jquery.jsPlumb-1.3.10-all-min.js.download"></script>
+
+  <!-- codemirror.net online code editor -->
+  <script type="text/javascript" src="./1.1 Getting Started_files/codemirror.js.download"></script>
+  <script type="text/javascript" src="./1.1 Getting Started_files/python.js.download"></script>
+
+  <!-- d3 -->
+  <script type="text/javascript" src="./1.1 Getting Started_files/d3.v2.min.js.download"></script>
+
+  <!-- Online Python Tutor -->
+  <script type="text/javascript" src="./1.1 Getting Started_files/pytutor.js.download"></script>
+
+  <!-- Coding.js -->
+  <script type="text/javascript" src="./1.1 Getting Started_files/coding.js.download"></script>
+  <script> var $c = new CodingJS("../theme/coding-js/"); </script>
+
+  <!-- Composing Programs -->
+  <script type="text/javascript" src="./1.1 Getting Started_files/cp.js.download"></script>
+
+  
+    <script src="./1.1 Getting Started_files/MathJax.js.download" type="text/javascript">
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+           TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+           extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js","jsMath2jax.js"],
+           tex2jax: {
+               inlineMath: [ ['$','$'] ],
+               displayMath: [ ['$$','$$'] ],
+               processEscapes: true },
+           "HTML-CSS": {
+               styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+           }
+       });
+    </script>
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body id="index" class="home"><div id="MathJax_Message" style="display: none;"></div>
+  <div id="booster_root"><template shadowrootmode="open"><div><!----><style>.noUi-target,.noUi-target *{-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;-ms-touch-action:none;touch-action:none;-ms-user-select:none;-moz-user-select:none;user-select:none;-moz-box-sizing:border-box;box-sizing:border-box}.noUi-target{position:relative}.noUi-base,.noUi-connects{width:100%;height:100%;position:relative;z-index:1}.noUi-connects{overflow:hidden;z-index:0}.noUi-connect,.noUi-origin{will-change:transform;position:absolute;z-index:1;top:0;right:0;height:100%;width:100%;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;-webkit-transform-style:preserve-3d;transform-origin:0 0;transform-style:flat}.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin{left:0;right:auto}.noUi-vertical .noUi-origin{top:-100%;width:0}.noUi-horizontal .noUi-origin{height:0}.noUi-handle{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute}.noUi-touch-area{height:100%;width:100%}.noUi-state-tap .noUi-connect,.noUi-state-tap .noUi-origin{-webkit-transition:transform .3s;transition:transform .3s}.noUi-state-drag *{cursor:inherit!important}.noUi-horizontal{height:18px}.noUi-horizontal .noUi-handle{width:34px;height:28px;right:-17px;top:-6px}.noUi-vertical{width:18px}.noUi-vertical .noUi-handle{width:28px;height:34px;right:-6px;bottom:-17px}.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle{left:-17px;right:auto}.noUi-target{background:#FAFAFA;border-radius:4px;border:1px solid #D3D3D3;box-shadow:inset 0 1px 1px #F0F0F0,0 3px 6px -5px #BBB}.noUi-connects{border-radius:3px}.noUi-connect{background:#3FB8AF}.noUi-draggable{cursor:ew-resize}.noUi-vertical .noUi-draggable{cursor:ns-resize}.noUi-handle{border:1px solid #D9D9D9;border-radius:3px;background:#FFF;cursor:default;box-shadow:inset 0 0 1px #FFF,inset 0 1px 7px #EBEBEB,0 3px 6px -3px #BBB}.noUi-active{box-shadow:inset 0 0 1px #FFF,inset 0 1px 7px #DDD,0 3px 6px -3px #BBB}.noUi-handle:after,.noUi-handle:before{content:"";display:block;position:absolute;height:14px;width:1px;background:#E8E7E6;left:14px;top:6px}.noUi-handle:after{left:17px}.noUi-vertical .noUi-handle:after,.noUi-vertical .noUi-handle:before{width:14px;height:1px;left:6px;top:14px}.noUi-vertical .noUi-handle:after{top:17px}[disabled] .noUi-connect{background:#B8B8B8}[disabled] .noUi-handle,[disabled].noUi-handle,[disabled].noUi-target{cursor:not-allowed}.noUi-pips,.noUi-pips *{-moz-box-sizing:border-box;box-sizing:border-box}.noUi-pips{position:absolute;color:#999}.noUi-value{position:absolute;white-space:nowrap;text-align:center}.noUi-value-sub{color:#ccc;font-size:10px}.noUi-marker{position:absolute;background:#CCC}.noUi-marker-sub{background:#AAA}.noUi-marker-large{background:#AAA}.noUi-pips-horizontal{padding:10px 0;height:80px;top:100%;left:0;width:100%}.noUi-value-horizontal{-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}.noUi-rtl .noUi-value-horizontal{-webkit-transform:translate(50%,50%);transform:translate(50%,50%)}.noUi-marker-horizontal.noUi-marker{margin-left:-1px;width:2px;height:5px}.noUi-marker-horizontal.noUi-marker-sub{height:10px}.noUi-marker-horizontal.noUi-marker-large{height:15px}.noUi-pips-vertical{padding:0 10px;height:100%;top:0;left:100%}.noUi-value-vertical{-webkit-transform:translate(0,-50%);transform:translate(0,-50%);padding-left:25px}.noUi-rtl .noUi-value-vertical{-webkit-transform:translate(0,50%);transform:translate(0,50%)}.noUi-marker-vertical.noUi-marker{width:5px;height:2px;margin-top:-1px}.noUi-marker-vertical.noUi-marker-sub{width:10px}.noUi-marker-vertical.noUi-marker-large{width:15px}.noUi-tooltip{display:block;position:absolute;border:1px solid #D9D9D9;border-radius:3px;background:#fff;color:#000;padding:5px;text-align:center;white-space:nowrap}.noUi-horizontal .noUi-tooltip{-webkit-transform:translate(-50%,0);transform:translate(-50%,0);left:50%;bottom:120%}.noUi-vertical .noUi-tooltip{-webkit-transform:translate(0,-50%);transform:translate(0,-50%);top:50%;right:120%}.noUi-horizontal .noUi-origin>.noUi-tooltip{-webkit-transform:translate(50%,0);transform:translate(50%,0);left:auto;bottom:10px}.noUi-vertical .noUi-origin>.noUi-tooltip{-webkit-transform:translate(0,-18px);transform:translate(0,-18px);top:auto;right:28px}
+.rel[data-v-26af50cc]{--rel: 1px}.rel.vertical.s[data-v-26af50cc]{--rel: 0.11vh}.rel.vertical.m[data-v-26af50cc]{--rel: 0.097vh}.rel.vertical.l[data-v-26af50cc]{--rel: 0.0836vh}.app-range-slider[data-v-26af50cc]{height:100%;width:100%}.app-range-slider[data-v-26af50cc] .noUi-target{border:none}.app-range-slider[data-v-26af50cc] .noUi-vertical{height:100%;width:2px}.app-range-slider[data-v-26af50cc] .noUi-vertical .noUi-handle{height:16px;width:16px;right:-7px;bottom:-16px}.app-range-slider[data-v-26af50cc] .noUi-vertical.noUi-target{padding:8px 0}.app-range-slider[data-v-26af50cc] .noUi-vertical .noUi-connects{margin:-8px 0;height:calc(100% + 16px)}.app-range-slider[data-v-26af50cc] .noUi-vertical .noUi-base:after{content:"";position:absolute;top:0;left:-7px;height:calc(100% + 16px);width:16px;background:rgba(0,0,0,0)}.app-range-slider[data-v-26af50cc] .noUi-horizontal{width:100%;height:2px}.app-range-slider[data-v-26af50cc] .noUi-horizontal .noUi-handle{width:16px;height:16px;top:-7px;right:-8px}.app-range-slider[data-v-26af50cc] .noUi-horizontal.noUi-target{padding:0 8px}.app-range-slider[data-v-26af50cc] .noUi-horizontal .noUi-connects{margin:0 -8px;width:calc(100% + 16px)}.app-range-slider[data-v-26af50cc] .noUi-horizontal .noUi-base:after{content:"";position:absolute;top:-7px;left:-8px;width:calc(100% + 16px);height:16px;background:rgba(0,0,0,0)}.app-range-slider[data-v-26af50cc] .noUi-connects{background:#f0efff}.app-range-slider[data-v-26af50cc] .noUi-connect{background:#7f75ff}.app-range-slider[data-v-26af50cc] .noUi-handle{background:#847aff;border-radius:50%;box-shadow:none;border:none;outline:none}.app-range-slider[data-v-26af50cc] .noUi-handle:after,.app-range-slider[data-v-26af50cc] .noUi-handle:before{display:none}.app-range-slider.horizontal[data-v-26af50cc] .noUi-target{border:none}.app-range-slider.horizontal[data-v-26af50cc] .noUi-vertical{height:100%;width:2px}.app-range-slider.horizontal[data-v-26af50cc] .noUi-vertical .noUi-handle{height:16px;width:16px;right:-7px;bottom:-16px}.app-range-slider.horizontal[data-v-26af50cc] .noUi-vertical.noUi-target{padding:8px 0}.app-range-slider.horizontal[data-v-26af50cc] .noUi-vertical .noUi-connects{margin:-8px 0;height:calc(100% + 16px)}.app-range-slider.horizontal[data-v-26af50cc] .noUi-vertical .noUi-base:after{content:"";position:absolute;top:0;left:-7px;height:calc(100% + 16px);width:16px;background:rgba(0,0,0,0)}.app-range-slider.horizontal[data-v-26af50cc] .noUi-horizontal{width:100%;height:2px}.app-range-slider.horizontal[data-v-26af50cc] .noUi-horizontal .noUi-handle{width:16px;height:16px;top:-7px;right:-8px}.app-range-slider.horizontal[data-v-26af50cc] .noUi-horizontal.noUi-target{padding:0 8px}.app-range-slider.horizontal[data-v-26af50cc] .noUi-horizontal .noUi-connects{margin:0 -8px;width:calc(100% + 16px)}.app-range-slider.horizontal[data-v-26af50cc] .noUi-horizontal .noUi-base:after{content:"";position:absolute;top:-7px;left:-8px;width:calc(100% + 16px);height:16px;background:rgba(0,0,0,0)}.app-range-slider.horizontal[data-v-26af50cc] .noUi-connects{background:#f0efff}.app-range-slider.horizontal[data-v-26af50cc] .noUi-connect{background:#7f75ff}.app-range-slider.horizontal[data-v-26af50cc] .noUi-handle{background:#847aff;border-radius:50%;box-shadow:none;border:none;outline:none}.app-range-slider.horizontal[data-v-26af50cc] .noUi-handle:after,.app-range-slider.horizontal[data-v-26af50cc] .noUi-handle:before{display:none}
+.app-root[data-v-37f9e44f]{position:fixed;z-index:1000000;border-radius:14px;background:rgba(129,120,255,.5);backdrop-filter:blur(4px);transition:opacity .2s ease;transition-delay:1.5s;opacity:.1}.app-root[data-v-37f9e44f]:hover{opacity:1;transition-delay:0s}.app-root.vertical[data-v-37f9e44f]{height:100px;padding:20px 25px}.app-root.horizontal[data-v-37f9e44f]{width:100px;padding:25px 20px}.app-root.tr[data-v-37f9e44f]{top:20px;right:20px}.app-root.tl[data-v-37f9e44f]{top:20px;left:20px}.app-root.br[data-v-37f9e44f]{bottom:20px;right:20px}.app-root.bl[data-v-37f9e44f]{bottom:20px;left:20px}
+</style></div></template></div><div class="container">
+
+    <div class="nav-main">
+      <div class="wrap" style="width: 95%;">
+        <a class="nav-home" href="https://www.composingprograms.com/">
+          <span class="nav-logo">c<span class="nav-logo-compose">⚬</span>mp<span class="nav-logo-compose">⚬</span>sing pr<span class="nav-logo-compose">⚬</span>grams</span>
+        </a>
+        <ul class="nav-site">
+          <li><a href="https://www.composingprograms.com/">Text</a></li>
+          <li><a href="https://www.composingprograms.com/projects.html">Projects</a></li>
+          <li><a href="https://www.composingprograms.com/tutor.html">Tutor</a></li>
+          <li><a href="https://www.composingprograms.com/about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="content wrap documentationContent" style="width: 95%;">
+      <div class="nav-docs" style="display: none;">
+	<h3>Chapter 1<a id="hide_contents">Hide contents</a> </h3>
+		<div class="nav-docs-section">
+			<h3><a href="https://www.composingprograms.com/pages/11-getting-started.html">1.1 Getting Started</a></h3>
+				<li><a href="https://www.composingprograms.com/pages/11-getting-started.html#programming-in-python">1.1.1 Programming in Python</a>
+				</li><li><a href="https://www.composingprograms.com/pages/11-getting-started.html#installing-python-3">1.1.2 Installing Python 3</a>
+				</li><li><a href="https://www.composingprograms.com/pages/11-getting-started.html#interactive-sessions">1.1.3 Interactive Sessions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/11-getting-started.html#first-example">1.1.4 First Example</a>
+				</li><li><a href="https://www.composingprograms.com/pages/11-getting-started.html#errors">1.1.5 Errors</a>
+		</li></div>
+		<div class="nav-docs-section">
+			<h3><a href="https://www.composingprograms.com/pages/12-elements-of-programming.html">1.2 Elements of Programming</a></h3>
+				<li><a href="https://www.composingprograms.com/pages/12-elements-of-programming.html#expressions">1.2.1 Expressions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/12-elements-of-programming.html#call-expressions">1.2.2 Call Expressions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/12-elements-of-programming.html#importing-library-functions">1.2.3 Importing Library Functions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/12-elements-of-programming.html#names-and-the-environment">1.2.4 Names and the Environment</a>
+				</li><li><a href="https://www.composingprograms.com/pages/12-elements-of-programming.html#evaluating-nested-expressions">1.2.5 Evaluating Nested Expressions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/12-elements-of-programming.html#the-non-pure-print-function">1.2.6 The Non-Pure Print Function</a>
+		</li></div>
+		<div class="nav-docs-section">
+			<h3><a href="https://www.composingprograms.com/pages/13-defining-new-functions.html">1.3 Defining New Functions</a></h3>
+				<li><a href="https://www.composingprograms.com/pages/13-defining-new-functions.html#environments">1.3.1 Environments</a>
+				</li><li><a href="https://www.composingprograms.com/pages/13-defining-new-functions.html#calling-user-defined-functions">1.3.2 Calling User-Defined Functions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/13-defining-new-functions.html#example-calling-a-user-defined-function">1.3.3 Example: Calling a User-Defined Function</a>
+				</li><li><a href="https://www.composingprograms.com/pages/13-defining-new-functions.html#local-names">1.3.4 Local Names</a>
+				</li><li><a href="https://www.composingprograms.com/pages/13-defining-new-functions.html#choosing-names">1.3.5 Choosing Names</a>
+				</li><li><a href="https://www.composingprograms.com/pages/13-defining-new-functions.html#functions-as-abstractions">1.3.6 Functions as Abstractions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/13-defining-new-functions.html#operators">1.3.7 Operators</a>
+		</li></div>
+		<div class="nav-docs-section">
+			<h3><a href="https://www.composingprograms.com/pages/14-designing-functions.html">1.4 Designing Functions</a></h3>
+				<li><a href="https://www.composingprograms.com/pages/14-designing-functions.html#documentation">1.4.1 Documentation</a>
+				</li><li><a href="https://www.composingprograms.com/pages/14-designing-functions.html#default-argument-values">1.4.2 Default Argument Values</a>
+		</li></div>
+		<div class="nav-docs-section">
+			<h3><a href="https://www.composingprograms.com/pages/15-control.html">1.5 Control</a></h3>
+				<li><a href="https://www.composingprograms.com/pages/15-control.html#statements">1.5.1 Statements</a>
+				</li><li><a href="https://www.composingprograms.com/pages/15-control.html#compound-statements">1.5.2 Compound Statements</a>
+				</li><li><a href="https://www.composingprograms.com/pages/15-control.html#defining-functions-ii-local-assignment">1.5.3 Defining Functions II: Local Assignment</a>
+				</li><li><a href="https://www.composingprograms.com/pages/15-control.html#conditional-statements">1.5.4 Conditional Statements</a>
+				</li><li><a href="https://www.composingprograms.com/pages/15-control.html#iteration">1.5.5 Iteration</a>
+				</li><li><a href="https://www.composingprograms.com/pages/15-control.html#testing">1.5.6 Testing</a>
+		</li></div>
+		<div class="nav-docs-section">
+			<h3><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html">1.6 Higher-Order Functions</a></h3>
+				<li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#functions-as-arguments">1.6.1 Functions as Arguments</a>
+				</li><li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#functions-as-general-methods">1.6.2 Functions as General Methods</a>
+				</li><li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#defining-functions-iii-nested-definitions">1.6.3 Defining Functions III: Nested Definitions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#functions-as-returned-values">1.6.4 Functions as Returned Values</a>
+				</li><li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#example-newton-s-method">1.6.5 Example: Newton's Method</a>
+				</li><li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#currying">1.6.6 Currying</a>
+				</li><li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#lambda-expressions">1.6.7 Lambda Expressions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#abstractions-and-first-class-functions">1.6.8 Abstractions and First-Class Functions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/16-higher-order-functions.html#function-decorators">1.6.9 Function Decorators</a>
+		</li></div>
+		<div class="nav-docs-section">
+			<h3><a href="https://www.composingprograms.com/pages/17-recursive-functions.html">1.7 Recursive Functions</a></h3>
+				<li><a href="https://www.composingprograms.com/pages/17-recursive-functions.html#the-anatomy-of-recursive-functions">1.7.1 The Anatomy of Recursive Functions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/17-recursive-functions.html#mutual-recursion">1.7.2 Mutual Recursion</a>
+				</li><li><a href="https://www.composingprograms.com/pages/17-recursive-functions.html#printing-in-recursive-functions">1.7.3 Printing in Recursive Functions</a>
+				</li><li><a href="https://www.composingprograms.com/pages/17-recursive-functions.html#tree-recursion">1.7.4 Tree Recursion</a>
+				</li><li><a href="https://www.composingprograms.com/pages/17-recursive-functions.html#example-partitions">1.7.5 Example: Partitions</a>
+		</li></div>
+      </div>
+
+      <div class="inner-content" style="width: 100%;">
+	<h1>Chapter 1: Building Abstractions with Functions</h1>
+  <div class="section" id="getting-started">
+<h2>1.1&nbsp;&nbsp;&nbsp;Getting Started</h2>
+<p>Computer science is a tremendously broad academic discipline. The areas of
+globally distributed systems, artificial intelligence, robotics, graphics,
+security, scientific computing, computer architecture, and dozens of emerging
+sub-fields all expand with new techniques and discoveries every year. The
+rapid progress of computer science has left few aspects of human life
+unaffected. Commerce, communication, science, art, leisure, and politics have
+all been reinvented as computational domains.</p>
+<p>The high productivity of computer science is only possible because the
+discipline is built upon an elegant and powerful set of fundamental ideas. All
+computing begins with representing information, specifying logic to process it,
+and designing abstractions that manage the complexity of that logic. Mastering
+these fundamentals will require us to understand precisely how computers
+interpret computer programs and carry out computational processes.</p>
+<p>These fundamental ideas have long been taught using the classic textbook
+<em>Structure and Interpretation of Computer Programs</em> (<a class="reference external" href="http://mitpress.mit.edu/sicp">SICP</a>) by Harold Abelson
+and Gerald Jay Sussman with Julie Sussman. This text borrows heavily from that
+textbook, which the original authors have kindly licensed for adaptation and
+reuse under a Creative Commons license. These notes are published under the
+<a class="reference external" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons attribution non-commericial share-alike license version 3</a>.</p>
+<div class="section" id="programming-in-python">
+<h3>1.1.1&nbsp;&nbsp;&nbsp;Programming in Python</h3>
+<blockquote class="epigraph">
+<p>A language isn't something you learn so much as something you join.</p>
+<p class="attribution">—<a class="reference external" href="http://arikaokrent.com/">Arika Okrent</a></p>
+</blockquote>
+<p>In order to define computational processes, we need a programming language;
+preferably one that many humans and a great variety of computers can all
+understand.  In this text, we will work primarily with the <a class="reference external" href="http://docs.python.org/py3k/">Python</a> language.</p>
+<p>Python is a widely used programming language that has recruited enthusiasts from
+many professions: web programmers, game engineers, scientists, academics, and
+even designers of new programming languages. When you learn Python, you join a
+million-person-strong community of developers. Developer communities are
+tremendously important institutions: members help each other solve problems,
+share their projects and experiences, and collectively develop software and
+tools.  Dedicated members often achieve celebrity and widespread esteem for
+their contributions.</p>
+<p>The Python language itself is the product of a <a class="reference external" href="http://www.python.org/psf/members/">large volunteer community</a> that prides itself on the <a class="reference external" href="http://python.org/community/diversity/">diversity</a> of its contributors. The language
+was conceived and first implemented by <a class="reference external" href="http://en.wikipedia.org/wiki/Guido_van_Rossum">Guido van Rossum</a> in the late 1980's.
+The first chapter of his <a class="reference external" href="http://docs.python.org/py3k/tutorial/appetite.html">Python 3 Tutorial</a> explains why Python is so
+popular, among the many languages available today.</p>
+<p>Python excels as an instructional language because, throughout its history,
+Python's developers have emphasized the human interpretability of Python code,
+reinforced by the <a class="reference external" href="http://www.python.org/dev/peps/pep-0020/">Zen of Python</a> guiding principles of beauty, simplicity, and
+readability. Python is particularly appropriate for this text because its broad
+set of features support a variety of different programming styles, which we will
+explore. While there is no single way to program in Python, there are a set of
+conventions shared across the developer community that facilitate reading,
+understanding, and extending existing programs. Python's combination of great
+flexibility and accessibility allows students to explore many programming
+paradigms, and then apply their newly acquired knowledge to thousands of
+<a class="reference external" href="http://pypi.python.org/pypi">ongoing projects</a>.</p>
+<p>These notes maintain the spirit of <a class="reference external" href="http://mitpress.mit.edu/sicp">SICP</a> by introducing the features of Python
+in step with techniques for abstraction and a rigorous model of computation. In
+addition, these notes provide a practical introduction to Python programming,
+including some advanced language features and illustrative examples. Increasing
+your facility with Python should come naturally as you progress through the
+text.</p>
+<p>The best way to get started programming in Python is to interact with the
+interpreter directly. This section describes how to install Python 3, initiate
+an interactive session with the interpreter, and start programming.</p>
+</div>
+<div class="section" id="installing-python-3">
+<h3>1.1.2&nbsp;&nbsp;&nbsp;Installing Python 3</h3>
+<p>As with all great software, Python has many versions. This text will use the
+most recent stable version of Python 3. Many computers have older versions of
+Python installed already, such as Python 2.7, but those will not match the
+descriptions in this text. You should be able to use any computer, but expect to
+install Python 3. (Don't worry, Python is free.)</p>
+<p>You can download Python 3 from the <cite>Python downloads</cite> page by clicking on the
+version that begins with 3 (not 2). Follow the instructions of the installer
+to complete installation.</p>
+<p>For further guidance, try these video tutorials on <a class="reference external" href="http://www.youtube.com/watch?v=54-wuFsPi0w">Windows installation</a> and
+<a class="reference external" href="http://www.youtube.com/watch?v=smHuBHxJdK8">Mac installation</a> of Python 3, created by Julia Oh.</p>
+</div>
+<div class="section" id="interactive-sessions">
+<h3>1.1.3&nbsp;&nbsp;&nbsp;Interactive Sessions</h3>
+<p>In an interactive Python session, you type some Python <em>code</em> after the
+<em>prompt</em>, <tt class="docutils literal">&gt;&gt;&gt;</tt>. The Python <em>interpreter</em> reads and executes what you type,
+carrying out your various commands.</p>
+<p>To start an interactive session, run the Python 3 application. Type <tt class="docutils literal">python3</tt>
+at a terminal prompt (Mac/Unix/Linux) or open the Python 3 application in
+Windows.</p>
+<p>If you see the Python prompt, <tt class="docutils literal">&gt;&gt;&gt;</tt>, then you have successfully started an
+interactive session. These notes depict example interactions using the prompt,
+followed by some input.</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="go">4</span>
+</pre></div>
+
+<p><strong>Interactive controls.</strong> Each session keeps a history of what you have typed.
+To access that history, press <tt class="docutils literal"><span class="pre">&lt;Control&gt;-P</span></tt> (previous) and <tt class="docutils literal"><span class="pre">&lt;Control&gt;-N</span></tt>
+(next).  <tt class="docutils literal"><span class="pre">&lt;Control&gt;-D</span></tt> exits a session, which discards this history. Up and
+down arrows also cycle through history on some systems.</p>
+</div>
+<div class="section" id="first-example">
+<h3>1.1.4&nbsp;&nbsp;&nbsp;First Example</h3>
+<blockquote class="epigraph">
+<div class="line-block">
+<div class="line">And, as imagination bodies forth</div>
+<div class="line">The forms of things to unknown, and the poet's pen</div>
+<div class="line">Turns them to shapes, and gives to airy nothing</div>
+<div class="line">A local habitation and a name.</div>
+</div>
+<p class="attribution">—William Shakespeare, A Midsummer-Night's Dream</p>
+</blockquote>
+<p>To give Python a proper introduction, we will begin with an example that uses
+several language features.  In the next section, we will start from scratch and
+build up the language piece by piece. Think of this section as a sneak preview
+of features to come.</p>
+<p>Python has built-in support for a wide range of common programming activities,
+such as manipulating text, displaying graphics, and communicating over the
+Internet.  The line of Python code</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+</pre></div>
+
+<p>is an <tt class="docutils literal">import</tt> statement that loads functionality for accessing data on the
+Internet. In particular, it makes available a function called <tt class="docutils literal">urlopen</tt>, which
+can access the content at a uniform resource locator (URL), a location of
+something on the Internet.</p>
+<p><strong>Statements &amp; Expressions</strong>. Python code consists of expressions and
+statements. Broadly, computer programs consist of instructions to either</p>
+<ol class="arabic simple">
+<li>Compute some value</li>
+<li>Carry out some action</li>
+</ol>
+<p>Statements typically describe actions. When the Python interpreter executes a
+statement, it carries out the corresponding action. On the other hand,
+expressions typically describe computations. When Python evaluates an
+expression, it computes the value of that expression. This chapter introduces
+several types of statements and expressions.</p>
+<p>The assignment statement</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">shakespeare</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">'http://composingprograms.com/shakespeare.txt'</span><span class="p">)</span>
+</pre></div>
+
+<p>associates the name <tt class="docutils literal">shakespeare</tt> with the value of the expression that
+follows <tt class="docutils literal">=</tt>.  That expression applies the <tt class="docutils literal">urlopen</tt> function to a URL that
+contains the complete text of William Shakespeare's 37 plays, all in a single
+text document.</p>
+<p><strong>Functions</strong>. Functions encapsulate logic that manipulates data. <tt class="docutils literal">urlopen</tt>
+is a function.  A web address is a piece of data, and the text of Shakespeare's
+plays is another. The process by which the former leads to the latter may be
+complex, but we can apply that process using only a simple expression because
+that complexity is tucked away within a function. Functions are the primary
+topic of this chapter.</p>
+<p>Another assignment statement</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">shakespeare</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</pre></div>
+
+<p>associates the name <tt class="docutils literal">words</tt> to the set of all unique words that appear in
+Shakespeare's plays, all 33,721 of them.  The chain of commands to <tt class="docutils literal">read</tt>,
+<tt class="docutils literal">decode</tt>, and <tt class="docutils literal">split</tt>, each operate on an intermediate computational entity:
+we <tt class="docutils literal">read</tt> the data from the opened URL, then <tt class="docutils literal">decode</tt> the data into text,
+and finally <tt class="docutils literal">split</tt> the text into words.  All of those words are placed in a
+<tt class="docutils literal">set</tt>.</p>
+<p><strong>Objects</strong>. A <tt class="docutils literal">set</tt> is a type of object, one that supports set operations
+like computing intersections and membership. An object seamlessly bundles
+together data and the logic that manipulates that data, in a way that manages
+the complexity of both. Objects are the primary topic of Chapter 2.  Finally,
+the expression</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">{</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span> <span class="ow">and</span> <span class="n">w</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">words</span><span class="p">}</span>
+<span class="go">{'redder', 'drawer', 'reward', 'diaper', 'repaid'}</span>
+</pre></div>
+
+<p>is a compound expression that evaluates to the set of all Shakespearian words
+that are simultaneously a word spelled in reverse. The cryptic notation
+<tt class="docutils literal"><span class="pre">w[::-1]</span></tt> enumerates each letter in a word, but the <tt class="docutils literal"><span class="pre">-1</span></tt> dictates to step
+backwards.  When you enter an expression in an interactive session, Python
+prints its value on the following line.</p>
+<p><strong>Interpreters</strong>. Evaluating compound expressions requires a precise procedure
+that interprets code in a predictable way. A program that implements such a
+procedure, evaluating compound expressions, is called an interpreter. The
+design and implementation of interpreters is the primary topic of Chapter 3.</p>
+<p>When compared with other computer programs, interpreters for programming
+languages are unique in their generality. Python was not designed with
+Shakespeare in mind. However, its great flexibility allowed us to process a
+large amount of text with only a few statements and expressions.</p>
+<p>In the end, we will find that all of these core concepts are closely related:
+functions are objects, objects are functions, and interpreters are instances of
+both. However, developing a clear understanding of each of these concepts and
+their role in organizing code is critical to mastering the art of programming.</p>
+</div>
+<div class="section" id="errors">
+<h3>1.1.5&nbsp;&nbsp;&nbsp;Errors</h3>
+<p>Python is waiting for your command.  You are encouraged to experiment with the
+language, even though you may not yet know its full vocabulary and structure.
+However, be prepared for errors.  While computers are tremendously fast and
+flexible, they are also extremely rigid. The nature of computers is described in
+<a class="reference external" href="http://web.stanford.edu/class/cs101/code-1-introduction.html">Stanford's introductory course</a> as</p>
+<blockquote class="epigraph">
+<p>The fundamental equation of computers is:</p>
+<p><tt class="docutils literal">computer = powerful + stupid</tt></p>
+<p>Computers are very powerful, looking at volumes of data very quickly.
+Computers can perform billions of operations per second, where each operation
+is pretty simple.</p>
+<p>Computers are also shockingly stupid and fragile. The operations that they can
+do are extremely rigid, simple, and mechanical. The computer lacks anything
+like real insight ... it's nothing like the HAL 9000 from the movies. If
+nothing else, you should not be intimidated by the computer as if it's some
+sort of brain. It's very mechanical underneath it all.</p>
+<p>Programming is about a person using their real insight to build something
+useful, constructed out of these teeny, simple little operations that the
+computer can do.</p>
+<p class="attribution">—Francisco Cai and Nick Parlante, Stanford CS101</p>
+</blockquote>
+<p>The rigidity of computers will immediately become apparent as you experiment
+with the Python interpreter: even the smallest spelling and formatting changes
+will cause unexpected output and errors.</p>
+<p>Learning to interpret errors and diagnose the cause of unexpected errors is
+called <em>debugging</em>. Some guiding principles of debugging are:</p>
+<ol class="arabic simple">
+<li><strong>Test incrementally</strong>: Every well-written program is composed of small,
+modular components that can be tested individually. Try out everything you
+write as soon as possible to identify problems early and gain confidence in
+your components.</li>
+<li><strong>Isolate errors</strong>: An error in the output of a statement can typically be
+attributed to a particular modular component.  When trying to diagnose a
+problem, trace the error to the smallest fragment of code you can before
+trying to correct it.</li>
+<li><strong>Check your assumptions</strong>: Interpreters do carry out your instructions to
+the letter — no more and no less. Their output is unexpected when the
+behavior of some code does not match what the programmer believes (or
+assumes) that behavior to be. Know your assumptions, then focus your
+debugging effort on verifying that your assumptions actually hold.</li>
+<li><strong>Consult others</strong>: You are not alone!  If you don't understand an error
+message, ask a friend, instructor, or search engine. If you have isolated an
+error, but can't figure out how to correct it, ask someone else to take a
+look. A lot of valuable programming knowledge is shared in the process of
+group problem solving.</li>
+</ol>
+<p>Incremental testing, modular design, precise assumptions, and teamwork are
+themes that persist throughout this text. Hopefully, they will also persist
+throughout your computer science career.</p>
+</div>
+</div>
+  <p><i>Continue</i>:
+  	<a href="https://www.composingprograms.com/pages/12-elements-of-programming.html">
+  		1.2 Elements of Programming
+  	</a>
+      </p></div>
+    </section>
+
+    <div class="wrap" style="width: 95%;">
+      <footer id="contentinfo" class="body">
+          Composing Programs by <a href="http://www.denero.org/">John
+          DeNero</a>, based on the textbook <a href="http://mitpress.mit.edu/sicp/">Structure and
+          Interpretation of Computer Programs</a> by Harold Abelson and
+          Gerald Jay Sussman, is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+          Commons Attribution-ShareAlike 3.0 Unported License</a>.
+      </footer><!-- /#contentinfo -->
+    </div>
+  </div>
+
+</body><div id="aiFabShadowRoot" data-fab-type="react" style="opacity: 1;"><template shadowrootmode="open"><div id="fab-react-root"><div class="fab-root"><div class="acrobat-button-container " style="bottom: 36px;"><div class="acrobat-button " role="button" aria-label="Get summaries and key insights using AI Assistant"><button class="close-btn  "><svg class="close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_8552_7892" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14" style="mask-type: alpha;"><path d="M7.82482 7.00034L10.6374 4.18778C10.7893 4.03592 10.7893 3.78969 10.6374 3.63783L10.3625 3.36292C10.2106 3.21106 9.96446 3.21106 9.81255 3.36292L6.99995 6.17548L4.18734 3.36292C4.03543 3.21106 3.78933 3.21106 3.63743 3.36292L3.36247 3.63783C3.21056 3.78969 3.21056 4.03592 3.36247 4.18778L6.17507 7.00034L3.36247 9.81295C3.21056 9.96481 3.21056 10.2111 3.36247 10.3629L3.63743 10.6378C3.78933 10.7897 4.03543 10.7897 4.18734 10.6378L6.99995 7.82526L9.81255 10.6378C9.96446 10.7897 10.2106 10.7897 10.3625 10.6378L10.6374 10.3629C10.7893 10.2111 10.7893 9.96481 10.6374 9.81295L7.82482 7.00034Z" fill="#222222"></path></mask><g mask="url(#mask0_8552_7892)"><rect width="14" height="14"></rect></g></svg><svg class="burger-icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_12188_28876" maskUnits="userSpaceOnUse" x="3" y="3" width="15" height="14" style="mask-type: alpha;"><path d="M15.1285 12.8008H6.37852C6.08867 12.8008 5.85352 13.0359 5.85352 13.3258C5.85352 13.6156 6.08867 13.8508 6.37852 13.8508H15.1285C15.4184 13.8508 15.6535 13.6156 15.6535 13.3258C15.6535 13.0359 15.4184 12.8008 15.1285 12.8008Z" fill="#292929"></path><path d="M6.37852 6.85078H15.1285C15.4184 6.85078 15.6535 6.61562 15.6535 6.32578C15.6535 6.03594 15.4184 5.80078 15.1285 5.80078H6.37852C6.08867 5.80078 5.85352 6.03594 5.85352 6.32578C5.85352 6.61562 6.08867 6.85078 6.37852 6.85078Z" fill="#292929"></path><path d="M15.1285 9.30078H6.37852C6.08867 9.30078 5.85352 9.53594 5.85352 9.82578C5.85352 10.1156 6.08867 10.3508 6.37852 10.3508H15.1285C15.4184 10.3508 15.6535 10.1156 15.6535 9.82578C15.6535 9.53594 15.4184 9.30078 15.1285 9.30078Z" fill="#292929"></path></mask><g mask="url(#mask0_12188_28876)"><rect x="3.75391" y="3" width="14" height="14" fill="#464646"></rect></g></svg></button><div class="icon-container" role="button" tabindex="0" aria-label="Open AI Assistant"><svg id="ImportedIcons" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="fab-svg-icon"><path d="m6.21661,16.39534c-1.35034,2.23499-2.67933,3.64758-3.45616,3.64758-.12795.00539-.25276-.04056-.34667-.12762-.14818-.12483-.21629-.32065-.17758-.5105.14764-.80079,1.68628-1.95576,3.98041-3.00946Zm6.49075-3.19656c-.57993.12528-1.1792.27056-1.78689.43544-.4366.11893-.87951.24862-1.32255.38729.23541-.4949.4515-.98554.6398-1.452.24831-.6159.48156-1.232.69564-1.83456.18831.30354.38304.59839.58195.88207.39375.56092.81787,1.09736,1.19205,1.58176Zm-2.99822-10.63684c.08814-.18001.26644-.29855.46653-.31016.51149,0,.62276.63358.62276,1.1638-.06787,1.25011-.29293,2.48669-.66988,3.68055-.85816-2.33642-.73831-3.97319-.41942-4.53419h.00001Zm9.60883,12.20974c-.13359.4402-.56725.71808-1.023.6555-.15594-.00061-.3112-.02054-.46224-.05933-1.07834-.28263-2.07953-.80363-2.92976-1.5246.71719-.11267,1.44198-.17001,2.16797-.17149.48402-.00813.96771.03017,1.44442.11438.43447.09244.92449.33873.80261.98554Zm1.45515-1.0537c-1.01837-.83309-2.33117-1.21735-3.63802-1.06487-.98482.00983-1.96732.09739-2.93836.26187-.62354-.62512-1.19003-1.30467-1.69272-2.03054-.38314-.54455-.73672-1.10931-1.05923-1.69182.54287-1.57384.85986-3.2167.94151-4.87953,0-1.49369-.57564-3.09087-2.19132-3.09087-.56296.01952-1.07528.33036-1.35261.82066-.68906,1.2165-.41298,3.72002.68705,6.26756-.38306,1.17041-.80046,2.31007-1.31196,3.57265-.43687,1.08123-.93191,2.13803-1.48293,3.16579-1.64775.68213-5.15115,2.33642-5.48494,4.16456-.10306.53569.0783,1.08658.47942,1.45629.39145.35044.90217.53779,1.42737.5236,2.10998,0,4.21366-3.003,5.63044-5.58789.80461-.2816,1.62641-.53671,2.44391-.759.8967-.24407,1.76345-.44427,2.58082-.594,1.39014,1.39224,3.25004,2.21523,5.21531,2.30773,1.36751,0,1.87887-.60942,2.06516-1.122.20733-.5893.08589-1.24438-.3189-1.72019Z" fill="var(--iconRed, #d31510)" fill-rule="evenodd"></path></svg></div></div><div class="draggable-handle "><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.60039 13.0699C5.26313 13.0699 5.80039 12.5327 5.80039 11.8699C5.80039 11.2072 5.26313 10.6699 4.60039 10.6699C3.93765 10.6699 3.40039 11.2072 3.40039 11.8699C3.40039 12.5327 3.93765 13.0699 4.60039 13.0699Z" fill="#292929"></path><path d="M4.60039 8.27109C5.26313 8.27109 5.80039 7.73384 5.80039 7.07109C5.80039 6.40835 5.26313 5.87109 4.60039 5.87109C3.93765 5.87109 3.40039 6.40835 3.40039 7.07109C3.40039 7.73384 3.93765 8.27109 4.60039 8.27109Z" fill="#292929"></path><path d="M4.60039 3.47031C5.26313 3.47031 5.80039 2.93305 5.80039 2.27031C5.80039 1.60757 5.26313 1.07031 4.60039 1.07031C3.93765 1.07031 3.40039 1.60757 3.40039 2.27031C3.40039 2.93305 3.93765 3.47031 4.60039 3.47031Z" fill="#292929"></path><path d="M9.4002 13.0699C10.0629 13.0699 10.6002 12.5327 10.6002 11.8699C10.6002 11.2072 10.0629 10.6699 9.4002 10.6699C8.73745 10.6699 8.2002 11.2072 8.2002 11.8699C8.2002 12.5327 8.73745 13.0699 9.4002 13.0699Z" fill="#292929"></path><path d="M9.4002 8.27109C10.0629 8.27109 10.6002 7.73384 10.6002 7.07109C10.6002 6.40835 10.0629 5.87109 9.4002 5.87109C8.73745 5.87109 8.2002 6.40835 8.2002 7.07109C8.2002 7.73384 8.73745 8.27109 9.4002 8.27109Z" fill="#292929"></path><path d="M9.4002 3.47031C10.0629 3.47031 10.6002 2.93305 10.6002 2.27031C10.6002 1.60757 10.0629 1.07031 9.4002 1.07031C8.73745 1.07031 8.2002 1.60757 8.2002 2.27031C8.2002 2.93305 8.73745 3.47031 9.4002 3.47031Z" fill="#292929"></path></svg></div></div></div></div><style>
+    .acrobat-button-container {
+        position: fixed;
+        right: 0;
+        bottom: 36px;
+        z-index: 2147483646;
+        visibility: visible !important;
+        pointer-events: all;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    @media print {
+        .acrobat-button-container {
+            display: none !important;
+        }
+    }
+
+    .acrobat-button {
+        position: relative;
+        background: white;
+        display: flex;
+        align-items: center;
+        pointer-events: all;
+        touch-action: none;
+        box-shadow: 0px 2px 8px 0px #00000029;
+        height: 34px;
+        width: 34px;
+        border: 1px solid transparent;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        background-image: linear-gradient(white, white),
+                        linear-gradient(95.85deg, #D73220 0%, #D92361 33%, #7155FA 100%);
+        border-radius: 18px;
+        justify-content: right;
+        margin-right: var(--fab-margin-right, 28px);
+        overflow: hidden;
+    }
+
+    .acrobat-button-container-transparent {
+        opacity: 0.4 !important;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .acrobat-button-container-transparent:hover,
+    .acrobat-button-container-transparent:focus,
+    .acrobat-button-container-transparent:active {
+        opacity: 1;
+    }
+
+    .acrobat-button > svg {
+        flex-shrink: 0;
+        margin: 4px 5px 5px 5px;
+        width: 22px;
+        height: 22px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+    .acrobat-button:has(.close-btn.open),
+    .expand-acrobat-button {
+        width: 64px;
+    }
+
+    .disabled {
+        background: #B1B1B1;
+    }
+
+    .tooltip-text {
+        width: 160px;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #FFFFFF;
+        color: #292929;
+        border-radius: 7px;
+        padding: 4px 1px 5px 9px;
+        position: absolute;
+        z-index: 1;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 10px;
+        transition: opacity 0.3s, visibility 0s linear 2s;
+        font-size: 12px;
+        line-height: 15px;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.12));
+    }
+
+    .tooltip-text::after {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 100%;
+       transform: translateY(-50%);
+       border-width: 6px;
+       border-style: solid;
+       border-color: transparent transparent transparent #fff;
+    }
+
+    .show-tooltip {
+        visibility: visible;
+        opacity: 1;
+        line-height: 1.5;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        transition: opacity 0.3s;
+        transition-delay: 500ms;
+    }
+
+    .close-btn {
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-btn svg {
+        fill: #464646;
+    }
+
+    .close-btn.showCloseButton {
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    }
+
+    .fab-view-settings-dialog {
+        display: none;
+        position: absolute;
+        bottom: 40px;
+        z-index: 1;
+    }
+
+    .close-btn:hover {
+        background: #E6E6E6;
+        border-radius: 50%; /* Keep original circular hover */
+        cursor: pointer;
+    }
+
+    .fab-view-settings-dialog.showDialog {
+        display: block;
+    }
+    .close-btn .burger-icon {
+        display: inline;
+        margin-bottom: 2px;
+    }
+    .close-btn .close-icon {
+        display: none;
+    }
+    .close-btn.open .burger-icon {
+        display: none;
+    }
+    .close-btn.open .close-icon {
+        display: inline;
+    }
+    .tooltip-text .tooltip-text-content {
+        font-weight: bold;
+    }
+    .tooltip-text .tooltip-sub-text-text {
+        font-style: italic;
+        font-size: 11px;
+    }
+
+    /* Icon container styles - replaces iframe */
+    .icon-container {
+        width: 33px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: grab;
+        pointer-events: all;
+        flex-shrink: 0;
+        background: transparent;
+        border: none;
+    }
+
+    .icon-container:active {
+        cursor: grabbing;
+    }
+
+    .fab-svg-icon {
+        width: 22px;
+        height: 22px;
+        padding: 5px 5px 5px 6px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+
+    .draggable-handle {
+        display: none;
+        position: absolute;
+        right: var(--drag-handle-right, 12px);
+        cursor: grab;
+    }
+    .draggable-handle-visible {
+        display: flex;
+    }
+
+    /* Font face declarations - for proper font loading in Shadow DOM */
+    @font-face {
+        font-family: 'adobe-clean';
+        font-weight: 400;
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'adobe-clean';
+        font-weight: 700;
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'AdobeClean-Regular';
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'AdobeClean-Bold';
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf') format('opentype');
+    }
+    body {
+        font-family: 'AdobeClean-Regular', adobe-clean, "Adobe Clean", sans-serif;
+    }
+
+    .dialog-container {
+        width: 166px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        border: 1px solid #B1B1B1;
+        box-shadow: 0px 1px 4px 0px #00000026;
+        z-index: 1000;
+        padding: 4px;
+        position: relative;
+        margin: 4px 0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu .menu_item {
+        cursor: pointer;
+        font-family: 'AdobeClean-Regular', adobe-clean, "Adobe Clean", sans-serif;
+        align-content: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: #222222;
+        padding: 0px 12px;
+        height: 32px;
+        width: 140px;
+    }
+
+    .menu .menu_item:hover {
+        background-color: #eaeaea;
+    }
+
+    .preferences {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: #464646;
+    }
+
+    .divider {
+        border-top: 1px solid #E6E6E6;
+    }
+
+    /* React-specific wrappers - minimal */
+    .fab-root {
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+    }
+
+    button.close-btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10; /* Ensure clickable above all other elements */
+        pointer-events: auto;
+    }
+
+    /* FAB Action Pills - From Figma Design */
+    .fab-pills-container {
+        position: absolute;
+        bottom: 42px; /* FAB height (34px) + gap (8px) = 42px */
+        right: var(--fab-margin-right, 28px);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+        width: 142px;
+        z-index: 1;
+    }
+
+    .fab-pills-container.pills-below {
+        bottom: auto;
+        top: 42px; /* Same gap when positioned below */
+    }
+
+    /* Extend hover area using ::after pseudo-element - doesn't affect visual layout */
+    .fab-pills-container::after {
+        content: '';
+        position: absolute;
+        top: 100%; /* Start right after the pills content */
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: transparent;
+        pointer-events: auto;
+    }
+
+    .fab-pills-container.pills-below::after {
+        top: auto;
+        bottom: 100%; /* Start right before the pills when positioned below */
+    }
+
+    /* FTE Header - First Time Experience (56px with close button) */
+    .fab-fte-header {
+        position: relative;
+        width: 142px;
+        min-height: 56px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .fab-fte-background {
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 183.33px;
+        height: 126.82px;
+        background: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/images/fab-header-background.svg') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .fab-fte-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+        color: #222222;
+        padding: 0;
+    }
+
+    .fab-fte-close:hover {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+    }
+
+    .fab-fte-close svg {
+        width: 8px;
+        height: 8px;
+    }
+
+    .fab-fte-text {
+        position: relative;
+        width: 102px;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 16px;
+        color: #222222; /* Figma spec color */
+        z-index: 1;
+        white-space: normal;
+        word-wrap: break-word;
+        margin-left: 16px;
+        margin-right: auto;
+        box-sizing: border-box;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /* Hover Header - Normal state (24px without close button) */
+    .fab-hover-header {
+        position: relative;
+        width: 142px;
+        min-height: 24px;
+        background: #FFFFFF; /* White background to show the colorful SVG and text */
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .fab-hover-background {
+        position: absolute;
+        left: -27px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 212.63px;
+        height: 147.09px;
+        background: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/images/fab-header-background.svg') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .fab-hover-text {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 15px;
+        color: #222222; /* Figma spec color */
+        z-index: 1;
+        white-space: normal;
+        padding: 4px 9px;
+        box-sizing: border-box;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /* Individual Pill Buttons */
+    .fab-pill-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        width: 142px;
+        min-height: 24px; /* Min height, allows growth with content */
+        background: #FFFFFF;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        padding: 0;
+        transition: background 0.2s ease;
+        overflow: visible;
+    }
+
+    .fab-pill-button:hover {
+        background: #D5D5D5;
+    }
+
+    .fab-pill-button:hover .fab-pill-label,
+    .fab-pill-button:hover .fab-pill-icon {
+        color: #000000; /* Hover state color from Figma Alias/content/neutral/hover */
+    }
+
+    .fab-pill-button:active {
+        background: #F4F4F4;
+    }
+
+    .fab-pill-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 7px 4px 10px; /* Exact Figma specs: top right bottom left */
+        flex-shrink: 0;
+        box-sizing: border-box;
+    }
+
+    .fab-pill-icon img {
+        width: 16px;
+        height: 16px;
+        display: block;
+        flex-shrink: 0;
+        /* SVG icons with currentColor fill will inherit color from parent */
+        filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%) hue-rotate(196deg) brightness(97%) contrast(97%); /* #222222 */
+    }
+
+    .fab-pill-button:hover .fab-pill-icon img {
+        filter: brightness(0) saturate(100%); /* #000000 on hover */
+    }
+
+    .fab-pill-label {
+        display: flex;
+        align-items: center;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 15px; /* 1.252 * 12px = 15.024px */
+        color: #222222; /* Default text color from Figma Alias/content/neutral/default */
+        padding: 4px 9px 5px 0; /* Reduced right padding to prevent wrapping */
+        text-align: left;
+        white-space: normal; /* Allow text wrapping for multi-line content */
+        box-sizing: border-box;
+        flex: 1;
+        overflow: visible;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+</style></template></div></html>
