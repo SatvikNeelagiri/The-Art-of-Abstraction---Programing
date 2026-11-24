@@ -1,4 +1,4 @@
-from ast import parse, NodeVisitor, Name
+from ast import parse, NodeVisitor, Name, Constant, Expr, Assert
 
 # For error messages (student-facing) only
 _NAMES = {
@@ -88,7 +88,7 @@ def check(source_file, checked_funcs, disallow, source=None):
     See ast.__dir__() for AST type names.  The special node name 'Recursion'
     checks for overtly recursive calls (i.e., calls of the form NAME(...) where
     NAME is an enclosing def."""
-    return ExclusionChecker(disallow).check(source_file, checked_funcs, source)
+    return ExclusionChecker(disallow).check(source_file, checked_funcs, source=source)
 
 class ExclusionChecker(NodeVisitor):
     """An AST visitor that checks that certain constructs are excluded from
@@ -108,6 +108,29 @@ class ExclusionChecker(NodeVisitor):
         if self._checking and type(node).__name__ in self._disallow:
             self._report(node)
         super().generic_visit(node)
+
+    # String literals are Constant nodes (since Python 3.8), so the name 'Str'
+    # is handled specially: it disallows str constants and f-strings, except
+    # docstrings (a bare string statement) and assert messages, which are part
+    # of the provided skeleton code.
+
+    def visit_Expr(self, node):
+        if isinstance(node.value, Constant) and isinstance(node.value.value, str):
+            return  # docstring or other bare string statement
+        self.generic_visit(node)
+
+    def visit_Assert(self, node):
+        self.visit(node.test)
+
+    def visit_Constant(self, node):
+        if self._checking and 'Str' in self._disallow and isinstance(node.value, str):
+            self._report(node, node_name='str')
+        self.generic_visit(node)
+
+    def visit_JoinedStr(self, node):
+        if self._checking and 'Str' in self._disallow:
+            self._report(node, node_name='str')
+        self.generic_visit(node)
 
     def visit_Module(self, node):
         if "__main__" in self._checked_funcs:
@@ -134,8 +157,9 @@ class ExclusionChecker(NodeVisitor):
             self._checking = checking0
         self._func_nest.pop()
 
-    def _report(self, node, msg=None):
-        node_name = _NAMES.get(type(node).__name__, type(node).__name__)
+    def _report(self, node, msg=None, node_name=None):
+        if node_name is None:
+            node_name = _NAMES.get(type(node).__name__, type(node).__name__)
         if msg is None:
             msg = "should not contain '{}'".format(node_name)
         print("{} {}".format(self._checked_name, msg))
