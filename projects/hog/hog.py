@@ -359,6 +359,9 @@ def boar_strategy(score, opponent_score, threshold=11, num_rolls=6):
     points, and returns NUM_ROLLS otherwise. Ignore the Sus Fuss rule.
     """
     "*** YOUR CODE HERE ***"
+    score_from_boar_brawl = boar_brawl(score, opponent_score)
+    if score_from_boar_brawl >= threshold:
+        return 0
     return num_rolls  # Remove this line once implemented.
 
 
