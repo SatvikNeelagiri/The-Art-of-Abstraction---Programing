@@ -1,5 +1,7 @@
 """The Game of Hog."""
 
+from math import sqrt
+
 from dice import six_sided, make_test_dice
 from ucb import main, trace, interact
 
@@ -21,6 +23,18 @@ def roll_dice(num_rolls, dice=six_sided):
     assert type(num_rolls) == int, "num_rolls must be an integer."
     assert num_rolls > 0, "Must roll at least once."
     "*** YOUR CODE HERE ***"
+    k=1
+    sow_sad_check_flag=False
+    sum_scored=0
+    while k<=num_rolls:
+        roll_value=dice()
+        if roll_value == 1:
+            sow_sad_check_flag=True
+        sum_scored=sum_scored+roll_value
+        k=k+1
+    
+    return 1 if sow_sad_check_flag else sum_scored
+
 
 
 def boar_brawl(player_score, opponent_score):
@@ -31,6 +45,12 @@ def boar_brawl(player_score, opponent_score):
 
     """
     "*** YOUR CODE HERE ***"
+    tens_digit_of_opponent = (opponent_score//10) % 10
+    ones_digit_of_player = player_score % 10
+
+    # the 3* Abs diff or 1, whichever is greater.
+
+    return max(3 * abs(tens_digit_of_opponent - ones_digit_of_player),1)
 
 
 def take_turn(num_rolls, player_score, opponent_score, dice=six_sided):
@@ -47,6 +67,11 @@ def take_turn(num_rolls, player_score, opponent_score, dice=six_sided):
     assert num_rolls >= 0, "Cannot roll a negative number of dice in take_turn."
     assert num_rolls <= 10, "Cannot roll more than 10 dice."
     "*** YOUR CODE HERE ***"
+
+    if num_rolls == 0:
+        return boar_brawl(player_score,opponent_score)
+    
+    return roll_dice(num_rolls,dice)
 
 
 def simple_update(num_rolls, player_score, opponent_score, dice=six_sided):
@@ -72,11 +97,43 @@ def is_prime(n):
 def num_factors(n):
     """Return the number of factors of N, including 1 and N itself."""
     "*** YOUR CODE HERE ***"
+    k = 1
+    count = 0
+
+    while k <= n:
+        divisor = n // k
+        remainder = n % k
+
+        if divisor < k:
+            break
+
+        if remainder == 0:
+            count += 1
+            # Count the paired factor if it is different
+            if divisor != k:
+                count += 1
+        k += 1
+
+    return count
 
 
 def sus_points(score):
     """Return the new score of a player taking into account the Sus Fuss rule."""
     "*** YOUR CODE HERE ***"
+
+    # check if the score is sus, A score is sus if it has exactly 3, or 4 Factors
+
+    number_of_factors = num_factors(score)
+
+    if not ( number_of_factors == 3 or number_of_factors == 4):
+        return score
+
+    updated_score=score
+    while not is_prime(updated_score):
+        updated_score = updated_score + 1
+    return updated_score 
+
+    
 
 
 def sus_update(num_rolls, player_score, opponent_score, dice=six_sided):
@@ -84,6 +141,9 @@ def sus_update(num_rolls, player_score, opponent_score, dice=six_sided):
     PLAYER_SCORE and then rolls NUM_ROLLS DICE, *including* Sus Fuss.
     """
     "*** YOUR CODE HERE ***"
+    score = player_score + take_turn(num_rolls, player_score, opponent_score, dice)
+    score = sus_points(score)
+    return score
 
 
 def always_roll_5(score, opponent_score):
@@ -118,8 +178,24 @@ def play(strategy0, strategy1, update, score0=0, score1=0, dice=six_sided, goal=
     dice:      A function of zero arguments that simulates a dice roll.
     goal:      The game ends and someone wins when this score is reached.
     """
-    who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
     "*** YOUR CODE HERE ***"
+    # assert str(update) == 'simple_update' or str(update) == 'sus_update', " Game mode currently not avaliable [DEBUG] not in simple_update or sus_update"
+
+
+    who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
+
+    while score0 < goal and score1 < goal:
+
+        if who == 0:
+            num_rolls = strategy0(score0, score1)
+            score0 = update(num_rolls, score0, score1, dice)
+        elif who == 1:
+            num_rolls = strategy1(score1, score0)
+            score1 = update(num_rolls, score1, score0, dice)
+            
+        # update who to the next player
+        who = 1 - who
+
     return score0, score1
 
 
@@ -144,6 +220,9 @@ def always_roll(n):
     assert n >= 0 and n <= 10
 
     "*** YOUR CODE HERE ***"
+    assert n >= 0 and n <= 10
+    return lambda score, opponent_score: n
+
 
 
 def catch_up(score, opponent_score):
@@ -174,6 +253,19 @@ def is_always_roll(strategy, goal=GOAL):
     False
     """
     "*** YOUR CODE HERE ***"
+    count=strategy(0,0)
+    player0_score=0
+    player1_score=0
+
+    while player0_score < goal:
+        while player1_score < goal:
+            if not strategy(player0_score, player1_score) == count:
+                return False
+            player1_score+=1
+        player1_score=0
+        player0_score+=1
+
+    return True
 
 
 def make_averaged(func_to_average, iterations=1000):
