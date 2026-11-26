@@ -301,6 +301,20 @@ def max_scoring_num_rolls(dice=six_sided, iterations=1000):
     1
     """
     "*** YOUR CODE HERE ***"
+    averaged_dice=make_averaged(roll_dice,iterations)
+    num_dies = 1
+    max_average = 0
+    ans = 1
+
+
+    while num_dies <= 10:
+        result = averaged_dice(num_dies, dice)
+        if result > max_average:
+            ans = num_dies
+            max_average = result
+        num_dies +=1
+
+    return ans
 
 
 def winner(strategy0, strategy1):
