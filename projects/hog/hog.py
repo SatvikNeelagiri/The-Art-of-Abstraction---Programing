@@ -281,7 +281,16 @@ def make_averaged(func_to_average, iterations=1000):
     """
 
     "*** YOUR CODE HERE ***"
+    def calculate_average(*args):
+        i=0
+        sum=0
+        while i < iterations:
+            sum+=func_to_average(*args)
+            i+=1
 
+        return sum/iterations
+
+    return calculate_average
 
 def max_scoring_num_rolls(dice=six_sided, iterations=1000):
     """Return the number of dice (1 to 10) that gives the maximum average score for a turn.
